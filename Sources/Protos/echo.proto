@@ -1,0 +1,15 @@
+// Echo/Sources/Protos/echo.prot
+syntax = "proto3";
+
+service EchoService {
+ rpc echo(EchoRequest) returns (EchoResponse);
+}
+
+message EchoRequest {
+ string contents = 1;
+}
+
+message EchoResponse {
+ string contents = 1;
+}
+
